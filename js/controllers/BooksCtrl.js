@@ -7,6 +7,8 @@ App.controller("BooksCtrl", [
       {title: "Winnetou"}
     ];
 
+    $scope.dupa="xxxxxxxxxx"
+
     $scope.create = function(title) {
       $scope.books.push({title: title});
     };
