@@ -22,7 +22,7 @@
   <div>delete</div>
 
 
-  <input type="text" ng-model="newBook"></input>
+  <input type="text" ng-model="newBook"> </input>
 
   <button ng-click="create(newBook)">
     dodaj
@@ -33,8 +33,34 @@
 <hr/>
 <div ng-controller="RefactoredBooksCtrl" class="panel">
   <h3>Refactored Books Ctrl</h3>
+  <h3>Books Ctrl</h3>
   TODO
-  {{books}}
+
+
+  <ul ng-repeat="book in books">
+    <li>{{book.title}}
+
+      <button ng-click="update(book,newBook)">
+        update
+      </button>
+
+      <button ng-click="remove(book)">
+        delete
+      </button>
+
+    </li>
+  </ul>
+
+
+  <div>update</div>
+  <div>delete</div>
+
+
+  <input type="text" ng-model="newBook"> </input>
+
+  <button ng-click="create(newBook)">
+    dodaj
+  </button>
 
 
 </div>

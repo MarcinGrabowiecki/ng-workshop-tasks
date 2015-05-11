@@ -1,6 +1,6 @@
 App.controller("RefactoredBooksCtrl", [
   "$scope",
-  //"booksCollection",
+  "booksCollection",
   function($scope, booksCollection) {
     $scope.books = booksCollection;
 
