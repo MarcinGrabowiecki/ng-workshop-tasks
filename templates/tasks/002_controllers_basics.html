@@ -10,12 +10,15 @@
   </div>
 </div>
 
+
+
 <hr/>
-<div>
-  <button class='tiny'>
-    toggle TODO
+<div ng-controller="ButtonCtrl">
+  {{klop.name}}
+  <button class='tiny' ng-click="toggle()"  ng-class="class">
+    {{buttonText}}
   </button>
-  <div id="toggle-cont" class="panel">
+  <div id="toggle-cont" class="panel" ng-show="visible">
     some content lorem ipsum
   </div>
 </div>
