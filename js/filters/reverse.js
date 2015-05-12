@@ -8,3 +8,15 @@ App.filter("reverse", [
     return reverseFilter;
   }
 ]);
+
+
+App.filter("reverseSplit", [
+  function() {
+    var reverseFilter = function(text,joiner) {
+      text = text || "";
+      return text.split("").reverse().join(joiner);
+    };
+
+    return reverseFilter;
+  }
+]);
